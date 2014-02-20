@@ -741,7 +741,7 @@
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         _isInteractive = YES;
     }
-    
+    [self.view endEditing:YES];
     [self.defaultInteractiveTransition updateTopViewHorizontalCenterWithRecognizer:recognizer];
     _isInteractive = NO;
 }
